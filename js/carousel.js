@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const slides = carousel.querySelectorAll('.carousel-slide');
     const prevBtn = carousel.querySelector('.carousel-btn.prev');
     const nextBtn = carousel.querySelector('.carousel-btn.next');
-    const indicators = carousel.querySelectorAll('.indicator');
+    
+    // Buscar indicadores fora do carrossel (agora estão posicionados abaixo das imagens)
+    const indicators = document.querySelectorAll('.carousel-indicators .indicator');
 
     let currentSlide = 0;
     let startX = 0;
