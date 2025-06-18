@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alee ST</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Dev AleeST</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Bem-vindo ao meu portfólio</h2>
+                <p>Aqui você encontrará meus projetos e trabalhos desenvolvidos por mim.</p>
+                <a href="#projetos" class="btn">Ver Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Me chamo Alessandro, sou um desenvolvedor apaixonado por criar soluções inovadoras. Tenho experiência em diversas tecnologias e estou sempre em busca de novos desafios.</p>
+                    <p>Este portfólio foi criado para compartilhar meus projetos e mostrar um pouco do meu trabalho. Sinta-se à vontade para explorar e entrar em contato!</p>
+                </div>
+                <div class="skills">
+                    <h3>Minhas Habilidades</h3>
+                    <ul>
+                        <li><i class="fab fa-html5"></i> HTML5 & <i class="fab fa-css3-alt"></i> CSS3</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fab fa-node-js"></i> Node.js</li>
+                        <li><i class="fas fa-mobile-alt"></i> Design Responsivo</li>
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fas fa-database"></i> MySQL</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="projects-grid">
+                <!-- Projeto 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/Imagem Principal.png" alt="Projeto 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projeto Reservas de Salas</h3>
+                        <p>Neste projeto tem as funcionalidades necessarias para o usuário realizar uma reserva de salas para reuniões.</p>
+                        <div class="project-links">
+                            <a href="projeto-detalhe.html" class="btn btn-sm">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/principal.png" alt="Projeto 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>Sistema de Gerenciamento de Estoque</h3>
+                        <p>Neste pequeno sistema, é possivel o usuário adicionar novos produtos e gerenciar o estoque, além de notificar o estoque quando está baixo.</p>
+                        <div class="project-links">
+                            <a href="projeto-detalhe-2.html" class="btn btn-sm">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto 3 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/projeto3.jpg" alt="Projeto 3">
+                    </div>
+                    <div class="project-info">
+                        <h3>Projeto Bot de Discord</h3>
+                        <p>O projeto consiste em gerenciar o servidor e o bot do discord usando uma página web.</p>
+                        <div class="project-links">
+                            <a href="projeto-detalhe-3.html" class="btn btn-sm">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="more-projects">
+                <a href="projetos.html" class="btn">Ver Todos os Projetos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>alesomensit@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>(54) 99920-4663</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Bento Gonçalves - RS - Brasil</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/alee_st_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/alessandro-somensi-7b3b3b1b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5554999204663" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-block">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Meu Portfólio</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#projetos">Projetos</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Detalhes do Projeto</h2>
+            <p>Visualize informações detalhadas sobre este projeto</p>
+        </div>
+    </section>
+
+    <section class="project-detail">
+        <div class="container">
+            <!-- Carrossel de imagens -->
+            <div class="project-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active">
+                        <img src="img/Captura de tela 2025-04-02 113526.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Captura de tela 2025-04-02 113602.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Captura de tela 2025-04-02 113616.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Captura de tela 2025-04-02 113641.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Captura de tela 2025-04-02 113655.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="img/Captura de tela 2025-04-02 113707.png" alt="Captura de tela do Projeto 1">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" data-slide="0"></span>
+                        <span class="indicator" data-slide="1"></span>
+                        <span class="indicator" data-slide="2"></span>
+                        <span class="indicator" data-slide="3"></span>
+                        <span class="indicator" data-slide="4"></span>
+                        <span class="indicator" data-slide="5"></span>
+                    </div>
+                    <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Player de Vídeo removido daqui e movido para dentro da descrição -->
+
+            <!-- Informações do projeto -->
+            <div class="project-info-detailed">
+                <h2 class="project-title">Projeto para reservas de salas</h2>
+                
+                <div class="project-meta">
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-date">
+                        <i class="far fa-calendar-alt"></i> Data: Fevereiro de 2025
+                    </div>
+                </div>
+                
+                <div class="project-description">
+                    <h3>Descrição</h3>
+                    <p>Sistema web desenvolvido para gerenciamento de reservas de salas para reuniões. O projeto oferece uma interface intuitiva para usuários realizarem reservas, visualizarem disponibilidade e gerenciarem seus agendamentos de forma eficiente.</p>
+                    <p>Neste aplicativo, foi criado na linguagem Python e conectividade ao banco de dados MySQL, o aplicativo tem por finalidade de facilitar uma reserva de alguma sala para realizar alguma reunião.</p>
+                    <p>Logo abaixo vou mostrar um passo a passo de como é utilizado:</p>
+                    
+                    <!-- Player de Vídeo -->
+                    <div class="project-video">
+                        <h3>Demonstração em Vídeo</h3>
+                        <div class="video-container">
+                            <video controls>
+                                <source src="img/app.mp4" type="video/mp4">
+                                Seu navegador não suporta a reprodução de vídeos.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-features">
+                    <h3>Funcionalidades</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Funcionalidade 1: Seleção de salas;</li>
+                        <li><i class="fas fa-check"></i> Funcionalidade 2: Nome do representante da sala;</li>
+                        <li><i class="fas fa-check"></i> Funcionalidade 3: Selecionar datas para reserva;</li>
+                        <li><i class="fas fa-check"></i> Funcionalidade 4: Verificar disponibilidade da sala</li>
+                        <li><i class="fas fa-check"></i> Funcionalidade 5: Logo em seguida realizar a reserva</li>
+                        <li><i class="fas fa-check"></i> Funcionalidade 6: Função para editar e excluir reserva</li>
+                    </ul>
+                </div>
+                
+                <div class="project-challenges">
+                    <h3>Desafios e Soluções</h3>
+                    <p>O principal desafio foi criar um sistema de agendamento que evitasse conflitos de horários e fornecesse uma experiência fluida aos usuários. Implementamos um algoritmo eficiente de verificação de disponibilidade e um sistema de cache para melhorar a performance.</p>                </p>
+                </div>
+                
+                <div class="project-links-detailed">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="related-projects">
+        <div class="container">
+            <h2 class="section-title">Projetos Relacionados</h2>
+            <div class="projects-grid">
+                <!-- Projeto Relacionado 1 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/projeto4.jpg" alt="Projeto Relacionado 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>EM DESENVOLVIMENTO</h3>
+                        <p>EM DESENVOLVIMENTO</p>
+                        <div class="project-links">
+                            <a href="projeto-detalhe-4.html" class="btn btn-sm">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Projeto Relacionado 2 -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="img/projeto5.jpg" alt="Projeto Relacionado 2">
+                    </div>
+                    <div class="project-info">
+                        <h3>EM DESENVOLVIMENTO</h3>
+                        <p>EM DESENVOLVIMENTO</p>
+                        <div class="project-links">
+                            <a href="projeto-detalhe-5.html" class="btn btn-sm">Ver Projeto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Meu Portfólio. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
