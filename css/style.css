@@ -317,6 +317,7 @@ nav ul li a:hover::after {
 .skills {
     flex: 1;
     min-width: 300px;
+    margin-top: 15px;
 }
 
 .skills h3 {
@@ -340,7 +341,9 @@ nav ul li a:hover::after {
 }
 
 .skills ul {
+    display: block !important;
     list-style: none;
+    padding: 0;
 }
 
 .skills ul li {
@@ -349,8 +352,10 @@ nav ul li a:hover::after {
     position: relative;
     font-size: 1.1rem;
     transition: var(--transition);
-    display: flex;
+    display: flex !important;
     align-items: center;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
 .skills ul li::before {
@@ -1271,7 +1276,7 @@ nav ul li a:hover::after {
     position: relative;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     margin-top: 12px;
     z-index: 2;
     pointer-events: auto;
@@ -1598,6 +1603,7 @@ nav ul.active {
 
     .about-content,
     .contact-content {
+        display: grid;
         grid-template-columns: 1fr;
         gap: 30px;
         padding: 0 15px;
@@ -1624,6 +1630,19 @@ nav ul.active {
         padding-left: 25px;
         margin-bottom: 12px;
         animation: fadeInRight 0.8s ease;
+        display: flex !important;
+        align-items: center;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    .skills {
+        margin-top: 20px;
+    }
+
+    .skills h3 {
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .about-text p {
@@ -1653,11 +1672,6 @@ nav ul.active {
     .indicator {
         width: 8px;
         height: 8px;
-    }
-
-    .carousel-indicators {
-        margin-top: 12px;
-        gap: 6px;
     }
 
     /* Estilos responsivos para páginas de projeto */
@@ -1830,5 +1844,25 @@ nav ul.active {
     .indicator {
         width: 7px;
         height: 7px;
+    }
+
+    .skills {
+        margin-top: 15px;
+    }
+
+    .skills h3 {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .skills ul li {
+        font-size: 0.95rem;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        display: flex !important;
+        align-items: center;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 } 
