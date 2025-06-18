@@ -1,0 +1,29 @@
+{
+  "name": "portfolio-alessandro",
+  "version": "1.0.0",
+  "description": "Portfólio pessoal de Alessandro Somensi - Desenvolvedor",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build completed'"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "web",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Alessandro Somensi",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/portfolio.git"
+  },
+  "homepage": "https://seu-usuario.github.io/portfolio"
+} 

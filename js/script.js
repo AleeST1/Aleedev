@@ -1,23 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Menu Toggle para dispositivos móveis
-    // Menu mobile toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('nav');
+    const navUl = nav ? nav.querySelector('ul') : null;
     
-    menuToggle.addEventListener('click', () => {
-        nav.classList.toggle('active');
-        document.body.classList.toggle('menu-open');
-    });
-    
-    // Fechar menu ao clicar em um link
-    const navLinks = document.querySelectorAll('nav ul li a');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('active');
-            document.body.classList.remove('menu-open');
+    if (menuToggle && nav && navUl) {
+        menuToggle.addEventListener('click', () => {
+            navUl.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
         });
-    });
+        
+        // Fechar menu ao clicar em um link
+        const navLinks = navUl.querySelectorAll('li a');
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navUl.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    }
     
     // Animação de scroll suave para links âncora
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
